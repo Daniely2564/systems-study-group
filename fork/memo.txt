@@ -1,0 +1,14 @@
+# What is fork() ??
+fork -> Creates a new process. (it is a system call.)
+    - What is a system call??
+        -> A way to request services from kernel.
+
+    - fork() requires no arguments.
+    - it returns a process id of the child process.
+    - after creation of process, both parent and child process start execution from the next instruction.
+
+fork == 0 => child process
+fork > 0 => parent process
+fork < 0 => fork failure.
+
+pid_t childPIDorZero = fork();
