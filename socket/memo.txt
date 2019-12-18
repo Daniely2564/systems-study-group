@@ -1,0 +1,17 @@
+What are sockets?
+    - Sockets are the low level endpoint used for processing information across a network
+    - Common networking protocols like HTTP, and FTP rely on sockets underneath to make connections
+
+Client Socket.
+    1) The client socket is created with a socket() call.
+    2) connected to a remote address with the connect() call.
+    3) can retrieve data through recv() call.
+
+    socket() -> connect() -> recv()
+
+Server Socket.
+    - We need to create a socket with a socket() call.
+    - bind() the ip and port for that particular socket. Specify where our socket will listen for connection instead of connecing.
+    - We call listen that allows for connections.
+    - accept() allows us to get another socket. return to us another socket that allows us to perform read/write operations.
+    - 
